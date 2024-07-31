@@ -24,7 +24,7 @@ public class GetAndPostExamples {
 		then().
 			statusCode(200).
 			body("data[4].first_name",equalTo("George")).
-			//body("data.first_name", hasItems("George","Rachel").
+			//body("data.first_name", hasItems("George","Rachel").Just adding few words
 			extract().
 			response();
 		String name = response.path("data[4].first_name");
